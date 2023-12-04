@@ -32,14 +32,6 @@
             this.tclEmployeeReception = new System.Windows.Forms.TabControl();
             this.tbEmployeeReception = new System.Windows.Forms.TabPage();
             this.dtgvAccountInfo = new System.Windows.Forms.DataGridView();
-            this.userNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fullNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.passwordDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dateOfBirthDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.typeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.addressDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.phoneNumberDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dateReceiveDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.accountInfoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.project_cafeDataSet1 = new QuanLiCaFe.Project_cafeDataSet1();
             this.label13 = new System.Windows.Forms.Label();
@@ -205,7 +197,7 @@
             this.tclEmployeeReception.Controls.Add(this.tpDrinkCategory);
             this.tclEmployeeReception.Controls.Add(this.tpDrink);
             this.tclEmployeeReception.Controls.Add(this.tpRevenue);
-            this.tclEmployeeReception.Font = new System.Drawing.Font("SVN-Aaron Script", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.tclEmployeeReception.Font = new System.Drawing.Font("SVN-Aaron Script", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.tclEmployeeReception.Location = new System.Drawing.Point(25, 27);
             this.tclEmployeeReception.Name = "tclEmployeeReception";
             this.tclEmployeeReception.SelectedIndex = 0;
@@ -223,10 +215,10 @@
             this.tbEmployeeReception.Controls.Add(this.btnReception);
             this.tbEmployeeReception.Controls.Add(this.panel1);
             this.tbEmployeeReception.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.tbEmployeeReception.Location = new System.Drawing.Point(4, 35);
+            this.tbEmployeeReception.Location = new System.Drawing.Point(4, 44);
             this.tbEmployeeReception.Name = "tbEmployeeReception";
             this.tbEmployeeReception.Padding = new System.Windows.Forms.Padding(3);
-            this.tbEmployeeReception.Size = new System.Drawing.Size(1229, 649);
+            this.tbEmployeeReception.Size = new System.Drawing.Size(1229, 640);
             this.tbEmployeeReception.TabIndex = 0;
             this.tbEmployeeReception.Text = "Tiếp nhận nhân viên";
             this.tbEmployeeReception.UseVisualStyleBackColor = true;
@@ -235,87 +227,14 @@
             // 
             this.dtgvAccountInfo.AutoGenerateColumns = false;
             this.dtgvAccountInfo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgvAccountInfo.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.userNameDataGridViewTextBoxColumn,
-            this.fullNameDataGridViewTextBoxColumn,
-            this.passwordDataGridViewTextBoxColumn,
-            this.dateOfBirthDataGridViewTextBoxColumn,
-            this.typeDataGridViewTextBoxColumn,
-            this.addressDataGridViewTextBoxColumn,
-            this.phoneNumberDataGridViewTextBoxColumn,
-            this.dateReceiveDataGridViewTextBoxColumn});
-            this.dtgvAccountInfo.DataSource = this.accountInfoBindingSource;
+            this.dtgvAccountInfo.DataSource = this.projectcafeDataSetBindingSource;
             this.dtgvAccountInfo.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnEnter;
-            this.dtgvAccountInfo.Location = new System.Drawing.Point(11, 10);
+            this.dtgvAccountInfo.Location = new System.Drawing.Point(14, 53);
             this.dtgvAccountInfo.Name = "dtgvAccountInfo";
             this.dtgvAccountInfo.RowHeadersWidth = 51;
             this.dtgvAccountInfo.RowTemplate.Height = 24;
-            this.dtgvAccountInfo.Size = new System.Drawing.Size(1155, 248);
+            this.dtgvAccountInfo.Size = new System.Drawing.Size(1155, 212);
             this.dtgvAccountInfo.TabIndex = 7;
-            // 
-            // userNameDataGridViewTextBoxColumn
-            // 
-            this.userNameDataGridViewTextBoxColumn.DataPropertyName = "UserName";
-            this.userNameDataGridViewTextBoxColumn.HeaderText = "UserName";
-            this.userNameDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.userNameDataGridViewTextBoxColumn.Name = "userNameDataGridViewTextBoxColumn";
-            this.userNameDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // fullNameDataGridViewTextBoxColumn
-            // 
-            this.fullNameDataGridViewTextBoxColumn.DataPropertyName = "FullName";
-            this.fullNameDataGridViewTextBoxColumn.HeaderText = "FullName";
-            this.fullNameDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.fullNameDataGridViewTextBoxColumn.Name = "fullNameDataGridViewTextBoxColumn";
-            this.fullNameDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // passwordDataGridViewTextBoxColumn
-            // 
-            this.passwordDataGridViewTextBoxColumn.DataPropertyName = "Password";
-            this.passwordDataGridViewTextBoxColumn.HeaderText = "Password";
-            this.passwordDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.passwordDataGridViewTextBoxColumn.Name = "passwordDataGridViewTextBoxColumn";
-            this.passwordDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // dateOfBirthDataGridViewTextBoxColumn
-            // 
-            this.dateOfBirthDataGridViewTextBoxColumn.DataPropertyName = "DateOfBirth";
-            this.dateOfBirthDataGridViewTextBoxColumn.HeaderText = "DateOfBirth";
-            this.dateOfBirthDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.dateOfBirthDataGridViewTextBoxColumn.Name = "dateOfBirthDataGridViewTextBoxColumn";
-            this.dateOfBirthDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // typeDataGridViewTextBoxColumn
-            // 
-            this.typeDataGridViewTextBoxColumn.DataPropertyName = "Type";
-            this.typeDataGridViewTextBoxColumn.HeaderText = "Type";
-            this.typeDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.typeDataGridViewTextBoxColumn.Name = "typeDataGridViewTextBoxColumn";
-            this.typeDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // addressDataGridViewTextBoxColumn
-            // 
-            this.addressDataGridViewTextBoxColumn.DataPropertyName = "Address";
-            this.addressDataGridViewTextBoxColumn.HeaderText = "Address";
-            this.addressDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.addressDataGridViewTextBoxColumn.Name = "addressDataGridViewTextBoxColumn";
-            this.addressDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // phoneNumberDataGridViewTextBoxColumn
-            // 
-            this.phoneNumberDataGridViewTextBoxColumn.DataPropertyName = "PhoneNumber";
-            this.phoneNumberDataGridViewTextBoxColumn.HeaderText = "PhoneNumber";
-            this.phoneNumberDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.phoneNumberDataGridViewTextBoxColumn.Name = "phoneNumberDataGridViewTextBoxColumn";
-            this.phoneNumberDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // dateReceiveDataGridViewTextBoxColumn
-            // 
-            this.dateReceiveDataGridViewTextBoxColumn.DataPropertyName = "DateReceive";
-            this.dateReceiveDataGridViewTextBoxColumn.HeaderText = "DateReceive";
-            this.dateReceiveDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.dateReceiveDataGridViewTextBoxColumn.Name = "dateReceiveDataGridViewTextBoxColumn";
-            this.dateReceiveDataGridViewTextBoxColumn.Width = 125;
             // 
             // accountInfoBindingSource
             // 
@@ -661,10 +580,10 @@
             this.tpDrinkCategory.Controls.Add(this.panel26);
             this.tpDrinkCategory.Controls.Add(this.panel24);
             this.tpDrinkCategory.Controls.Add(this.panel23);
-            this.tpDrinkCategory.Location = new System.Drawing.Point(4, 35);
+            this.tpDrinkCategory.Location = new System.Drawing.Point(4, 44);
             this.tpDrinkCategory.Name = "tpDrinkCategory";
             this.tpDrinkCategory.Padding = new System.Windows.Forms.Padding(3);
-            this.tpDrinkCategory.Size = new System.Drawing.Size(1229, 649);
+            this.tpDrinkCategory.Size = new System.Drawing.Size(1229, 640);
             this.tpDrinkCategory.TabIndex = 1;
             this.tpDrinkCategory.Text = "Loại thức uống";
             this.tpDrinkCategory.UseVisualStyleBackColor = true;
@@ -695,7 +614,7 @@
             this.cbUnit.FormattingEnabled = true;
             this.cbUnit.Location = new System.Drawing.Point(214, 12);
             this.cbUnit.Name = "cbUnit";
-            this.cbUnit.Size = new System.Drawing.Size(240, 34);
+            this.cbUnit.Size = new System.Drawing.Size(240, 43);
             this.cbUnit.TabIndex = 2;
             // 
             // label21
@@ -780,18 +699,19 @@
             // cbResearchDrinkCategory
             // 
             this.cbResearchDrinkCategory.FormattingEnabled = true;
-            this.cbResearchDrinkCategory.Location = new System.Drawing.Point(21, 24);
+            this.cbResearchDrinkCategory.Location = new System.Drawing.Point(21, 12);
             this.cbResearchDrinkCategory.Name = "cbResearchDrinkCategory";
-            this.cbResearchDrinkCategory.Size = new System.Drawing.Size(344, 34);
+            this.cbResearchDrinkCategory.Size = new System.Drawing.Size(344, 43);
             this.cbResearchDrinkCategory.TabIndex = 5;
             // 
             // btnResearchDrinkCategory
             // 
+            this.btnResearchDrinkCategory.Font = new System.Drawing.Font("SVN-Adam Gorry", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnResearchDrinkCategory.Location = new System.Drawing.Point(380, 11);
             this.btnResearchDrinkCategory.Name = "btnResearchDrinkCategory";
-            this.btnResearchDrinkCategory.Size = new System.Drawing.Size(110, 58);
+            this.btnResearchDrinkCategory.Size = new System.Drawing.Size(98, 44);
             this.btnResearchDrinkCategory.TabIndex = 4;
-            this.btnResearchDrinkCategory.Text = "Tìm kiếm";
+            this.btnResearchDrinkCategory.Text = "Tìm";
             this.btnResearchDrinkCategory.UseVisualStyleBackColor = true;
             // 
             // panel24
@@ -835,7 +755,7 @@
             0,
             0});
             this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(271, 34);
+            this.numericUpDown2.Size = new System.Drawing.Size(271, 43);
             this.numericUpDown2.TabIndex = 1;
             // 
             // label15
@@ -864,7 +784,7 @@
             this.comboBox4.FormattingEnabled = true;
             this.comboBox4.Location = new System.Drawing.Point(187, 12);
             this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(267, 34);
+            this.comboBox4.Size = new System.Drawing.Size(267, 43);
             this.comboBox4.TabIndex = 2;
             // 
             // label16
@@ -953,7 +873,7 @@
             this.comboBox5.FormattingEnabled = true;
             this.comboBox5.Location = new System.Drawing.Point(187, 16);
             this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(267, 34);
+            this.comboBox5.Size = new System.Drawing.Size(267, 43);
             this.comboBox5.TabIndex = 1;
             // 
             // label19
@@ -990,36 +910,40 @@
             // 
             // btnShowDrinkCategory
             // 
+            this.btnShowDrinkCategory.Font = new System.Drawing.Font("SVN-Adam Gorry", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnShowDrinkCategory.Location = new System.Drawing.Point(555, 11);
             this.btnShowDrinkCategory.Name = "btnShowDrinkCategory";
-            this.btnShowDrinkCategory.Size = new System.Drawing.Size(110, 58);
+            this.btnShowDrinkCategory.Size = new System.Drawing.Size(98, 44);
             this.btnShowDrinkCategory.TabIndex = 3;
             this.btnShowDrinkCategory.Text = "Xem";
             this.btnShowDrinkCategory.UseVisualStyleBackColor = true;
             // 
             // btnEditDrinkCategory
             // 
+            this.btnEditDrinkCategory.Font = new System.Drawing.Font("SVN-Adam Gorry", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEditDrinkCategory.Location = new System.Drawing.Point(361, 12);
             this.btnEditDrinkCategory.Name = "btnEditDrinkCategory";
-            this.btnEditDrinkCategory.Size = new System.Drawing.Size(110, 58);
+            this.btnEditDrinkCategory.Size = new System.Drawing.Size(98, 44);
             this.btnEditDrinkCategory.TabIndex = 2;
             this.btnEditDrinkCategory.Text = "Sửa";
             this.btnEditDrinkCategory.UseVisualStyleBackColor = true;
             // 
             // btnDeleteDrinkCategory
             // 
+            this.btnDeleteDrinkCategory.Font = new System.Drawing.Font("SVN-Adam Gorry", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDeleteDrinkCategory.Location = new System.Drawing.Point(191, 11);
             this.btnDeleteDrinkCategory.Name = "btnDeleteDrinkCategory";
-            this.btnDeleteDrinkCategory.Size = new System.Drawing.Size(110, 58);
+            this.btnDeleteDrinkCategory.Size = new System.Drawing.Size(98, 44);
             this.btnDeleteDrinkCategory.TabIndex = 1;
             this.btnDeleteDrinkCategory.Text = "Xóa";
             this.btnDeleteDrinkCategory.UseVisualStyleBackColor = true;
             // 
             // btnAddDrinkCategory
             // 
+            this.btnAddDrinkCategory.Font = new System.Drawing.Font("SVN-Adam Gorry", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddDrinkCategory.Location = new System.Drawing.Point(22, 11);
             this.btnAddDrinkCategory.Name = "btnAddDrinkCategory";
-            this.btnAddDrinkCategory.Size = new System.Drawing.Size(110, 58);
+            this.btnAddDrinkCategory.Size = new System.Drawing.Size(98, 44);
             this.btnAddDrinkCategory.TabIndex = 0;
             this.btnAddDrinkCategory.Text = "Thêm";
             this.btnAddDrinkCategory.UseVisualStyleBackColor = true;
@@ -1032,10 +956,10 @@
             this.tpDrink.Controls.Add(this.panel16);
             this.tpDrink.Controls.Add(this.panel15);
             this.tpDrink.Controls.Add(this.panel14);
-            this.tpDrink.Location = new System.Drawing.Point(4, 35);
+            this.tpDrink.Location = new System.Drawing.Point(4, 44);
             this.tpDrink.Name = "tpDrink";
             this.tpDrink.Padding = new System.Windows.Forms.Padding(3);
-            this.tpDrink.Size = new System.Drawing.Size(1229, 649);
+            this.tpDrink.Size = new System.Drawing.Size(1229, 640);
             this.tpDrink.TabIndex = 2;
             this.tpDrink.Text = "Thức uống";
             this.tpDrink.UseVisualStyleBackColor = true;
@@ -1052,18 +976,19 @@
             // comboBox2
             // 
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(21, 24);
+            this.comboBox2.Location = new System.Drawing.Point(20, 14);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(344, 34);
+            this.comboBox2.Size = new System.Drawing.Size(344, 43);
             this.comboBox2.TabIndex = 5;
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(380, 11);
+            this.button5.Font = new System.Drawing.Font("SVN-Adam Gorry", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.Location = new System.Drawing.Point(380, 12);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(110, 58);
+            this.button5.Size = new System.Drawing.Size(95, 46);
             this.button5.TabIndex = 4;
-            this.button5.Text = "Tìm kiếm";
+            this.button5.Text = "Tìm";
             this.button5.UseVisualStyleBackColor = true;
             // 
             // panel17
@@ -1080,7 +1005,7 @@
             this.cbResearchDrink.FormattingEnabled = true;
             this.cbResearchDrink.Location = new System.Drawing.Point(21, 24);
             this.cbResearchDrink.Name = "cbResearchDrink";
-            this.cbResearchDrink.Size = new System.Drawing.Size(344, 34);
+            this.cbResearchDrink.Size = new System.Drawing.Size(344, 43);
             this.cbResearchDrink.TabIndex = 5;
             // 
             // btnResearchDrink
@@ -1111,19 +1036,19 @@
             this.panel22.Location = new System.Drawing.Point(21, 207);
             this.panel22.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel22.Name = "panel22";
-            this.panel22.Size = new System.Drawing.Size(470, 59);
+            this.panel22.Size = new System.Drawing.Size(470, 66);
             this.panel22.TabIndex = 3;
             // 
             // numericUpDown1
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(187, 17);
+            this.numericUpDown1.Location = new System.Drawing.Point(187, 13);
             this.numericUpDown1.Maximum = new decimal(new int[] {
             -727379968,
             232,
             0,
             0});
             this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(271, 34);
+            this.numericUpDown1.Size = new System.Drawing.Size(271, 43);
             this.numericUpDown1.TabIndex = 1;
             // 
             // label14
@@ -1212,7 +1137,7 @@
             this.cbDrinkCatagory.FormattingEnabled = true;
             this.cbDrinkCatagory.Location = new System.Drawing.Point(187, 16);
             this.cbDrinkCatagory.Name = "cbDrinkCatagory";
-            this.cbDrinkCatagory.Size = new System.Drawing.Size(267, 34);
+            this.cbDrinkCatagory.Size = new System.Drawing.Size(267, 43);
             this.cbDrinkCatagory.TabIndex = 1;
             // 
             // label10
@@ -1238,36 +1163,40 @@
             // 
             // btnShowDrink
             // 
+            this.btnShowDrink.Font = new System.Drawing.Font("SVN-Adam Gorry", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnShowDrink.Location = new System.Drawing.Point(555, 11);
             this.btnShowDrink.Name = "btnShowDrink";
-            this.btnShowDrink.Size = new System.Drawing.Size(110, 58);
+            this.btnShowDrink.Size = new System.Drawing.Size(95, 46);
             this.btnShowDrink.TabIndex = 3;
             this.btnShowDrink.Text = "Xem";
             this.btnShowDrink.UseVisualStyleBackColor = true;
             // 
             // btnEditDrink
             // 
+            this.btnEditDrink.Font = new System.Drawing.Font("SVN-Adam Gorry", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEditDrink.Location = new System.Drawing.Point(361, 12);
             this.btnEditDrink.Name = "btnEditDrink";
-            this.btnEditDrink.Size = new System.Drawing.Size(110, 58);
+            this.btnEditDrink.Size = new System.Drawing.Size(95, 46);
             this.btnEditDrink.TabIndex = 2;
             this.btnEditDrink.Text = "Sửa";
             this.btnEditDrink.UseVisualStyleBackColor = true;
             // 
             // btnDeleteDrink
             // 
+            this.btnDeleteDrink.Font = new System.Drawing.Font("SVN-Adam Gorry", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDeleteDrink.Location = new System.Drawing.Point(191, 11);
             this.btnDeleteDrink.Name = "btnDeleteDrink";
-            this.btnDeleteDrink.Size = new System.Drawing.Size(110, 58);
+            this.btnDeleteDrink.Size = new System.Drawing.Size(95, 46);
             this.btnDeleteDrink.TabIndex = 1;
             this.btnDeleteDrink.Text = "Xóa";
             this.btnDeleteDrink.UseVisualStyleBackColor = true;
             // 
             // btnAddDrink
             // 
+            this.btnAddDrink.Font = new System.Drawing.Font("SVN-Adam Gorry", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddDrink.Location = new System.Drawing.Point(22, 11);
             this.btnAddDrink.Name = "btnAddDrink";
-            this.btnAddDrink.Size = new System.Drawing.Size(110, 58);
+            this.btnAddDrink.Size = new System.Drawing.Size(95, 46);
             this.btnAddDrink.TabIndex = 0;
             this.btnAddDrink.Text = "Thêm";
             this.btnAddDrink.UseVisualStyleBackColor = true;
@@ -1296,30 +1225,30 @@
             this.tpRevenue.BackColor = System.Drawing.Color.LightCyan;
             this.tpRevenue.Controls.Add(this.panel13);
             this.tpRevenue.Controls.Add(this.panel12);
-            this.tpRevenue.Location = new System.Drawing.Point(4, 35);
+            this.tpRevenue.Location = new System.Drawing.Point(4, 44);
             this.tpRevenue.Name = "tpRevenue";
             this.tpRevenue.Padding = new System.Windows.Forms.Padding(3);
-            this.tpRevenue.Size = new System.Drawing.Size(1229, 649);
+            this.tpRevenue.Size = new System.Drawing.Size(1229, 640);
             this.tpRevenue.TabIndex = 3;
             this.tpRevenue.Text = "Doanh thu";
             // 
             // panel13
             // 
             this.panel13.Controls.Add(this.dtgvBill);
-            this.panel13.Location = new System.Drawing.Point(8, 49);
+            this.panel13.Location = new System.Drawing.Point(8, 75);
             this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(1203, 539);
+            this.panel13.Size = new System.Drawing.Size(1203, 513);
             this.panel13.TabIndex = 1;
             // 
             // dtgvBill
             // 
             this.dtgvBill.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
             this.dtgvBill.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgvBill.Location = new System.Drawing.Point(14, 14);
+            this.dtgvBill.Location = new System.Drawing.Point(14, 17);
             this.dtgvBill.Name = "dtgvBill";
             this.dtgvBill.RowHeadersWidth = 51;
             this.dtgvBill.RowTemplate.Height = 24;
-            this.dtgvBill.Size = new System.Drawing.Size(1183, 494);
+            this.dtgvBill.Size = new System.Drawing.Size(1183, 491);
             this.dtgvBill.TabIndex = 0;
             // 
             // panel12
@@ -1327,34 +1256,35 @@
             this.panel12.Controls.Add(this.btnView);
             this.panel12.Controls.Add(this.dateTimePicker1);
             this.panel12.Controls.Add(this.dtpkFromDate);
-            this.panel12.Location = new System.Drawing.Point(8, 7);
+            this.panel12.Location = new System.Drawing.Point(6, 7);
             this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(1197, 36);
+            this.panel12.Size = new System.Drawing.Size(1205, 62);
             this.panel12.TabIndex = 0;
             // 
             // btnView
             // 
-            this.btnView.Location = new System.Drawing.Point(530, 2);
+            this.btnView.Font = new System.Drawing.Font("SVN-Adam Gorry", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnView.Location = new System.Drawing.Point(545, 5);
             this.btnView.Name = "btnView";
-            this.btnView.Size = new System.Drawing.Size(102, 31);
+            this.btnView.Size = new System.Drawing.Size(102, 48);
             this.btnView.TabIndex = 2;
             this.btnView.Text = "Xem";
             this.btnView.UseVisualStyleBackColor = true;
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Font = new System.Drawing.Font("SVN-Adam Gorry", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Location = new System.Drawing.Point(805, 5);
+            this.dateTimePicker1.Font = new System.Drawing.Font("SVN-Agency FB", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePicker1.Location = new System.Drawing.Point(876, 5);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(358, 28);
+            this.dateTimePicker1.Size = new System.Drawing.Size(323, 37);
             this.dateTimePicker1.TabIndex = 1;
             // 
             // dtpkFromDate
             // 
-            this.dtpkFromDate.Font = new System.Drawing.Font("SVN-Adam Gorry", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpkFromDate.Location = new System.Drawing.Point(3, 3);
+            this.dtpkFromDate.Font = new System.Drawing.Font("SVN-Agency FB", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpkFromDate.Location = new System.Drawing.Point(16, 10);
             this.dtpkFromDate.Name = "dtpkFromDate";
-            this.dtpkFromDate.Size = new System.Drawing.Size(343, 28);
+            this.dtpkFromDate.Size = new System.Drawing.Size(317, 37);
             this.dtpkFromDate.TabIndex = 0;
             // 
             // projectcafeDataSetBindingSource
@@ -1570,13 +1500,5 @@
         private Project_cafeDataSet1 project_cafeDataSet1;
         private System.Windows.Forms.BindingSource accountInfoBindingSource;
         private Project_cafeDataSet1TableAdapters.AccountInfoTableAdapter accountInfoTableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn userNameDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn fullNameDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn passwordDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dateOfBirthDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn typeDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn addressDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn phoneNumberDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dateReceiveDataGridViewTextBoxColumn;
     }
 }
