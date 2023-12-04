@@ -52,10 +52,10 @@
             this.panel1.Controls.Add(this.btnLogin);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.panel2);
-            this.panel1.Location = new System.Drawing.Point(219, 99);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel1.Location = new System.Drawing.Point(164, 80);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(427, 227);
+            this.panel1.Size = new System.Drawing.Size(320, 184);
             this.panel1.TabIndex = 0;
             // 
             // btnExit
@@ -66,7 +66,7 @@
             this.btnExit.Location = new System.Drawing.Point(280, 163);
             this.btnExit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(111, 46);
+            this.btnExit.Size = new System.Drawing.Size(83, 37);
             this.btnExit.TabIndex = 4;
             this.btnExit.Text = "Thoát";
             this.btnExit.UseVisualStyleBackColor = true;
@@ -79,7 +79,7 @@
             this.btnLogin.Location = new System.Drawing.Point(148, 163);
             this.btnLogin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(126, 46);
+            this.btnLogin.Size = new System.Drawing.Size(94, 37);
             this.btnLogin.TabIndex = 3;
             this.btnLogin.Text = "Đăng nhập";
             this.btnLogin.UseVisualStyleBackColor = true;
@@ -90,10 +90,10 @@
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.panel3.Controls.Add(this.txbPassword);
             this.panel3.Controls.Add(this.label2);
-            this.panel3.Location = new System.Drawing.Point(20, 90);
-            this.panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel3.Location = new System.Drawing.Point(15, 73);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(389, 59);
+            this.panel3.Size = new System.Drawing.Size(292, 48);
             this.panel3.TabIndex = 2;
             // 
             // txbPassword
@@ -121,10 +121,10 @@
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.panel2.Controls.Add(this.txbUserName);
             this.panel2.Controls.Add(this.label1);
-            this.panel2.Location = new System.Drawing.Point(20, 17);
-            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel2.Location = new System.Drawing.Point(15, 14);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(389, 59);
+            this.panel2.Size = new System.Drawing.Size(292, 48);
             this.panel2.TabIndex = 0;
             // 
             // txbUserName
